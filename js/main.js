@@ -239,8 +239,8 @@
  }();
 
  var songList=[],       //存储创建的歌单
- 	 songs=[],          //存储添加的我喜欢的音乐
- 	 playedSongs=[];	//存储播放过的音乐
+     songs=[],          //存储添加的我喜欢的音乐
+     playedSongs=[];	//存储播放过的音乐
 
  //初始化
  init();
