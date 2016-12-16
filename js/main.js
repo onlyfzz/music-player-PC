@@ -371,25 +371,25 @@ function showRemind(msg){
 var poster=function(){
 	/**
 	 *@param{jQ-Object} poster 	传入轮播的对象
-	 *@param{Object}	setting 传入想要的配置
+	 *@param{Object} setting 传入想要的配置
 	 */
  	function Carousel(poster,setting){
  		var self=this;
  		this.poster=poster;
- 		this.postItem=poster.find('li'); 			//包裹图片的li
+ 		this.postItem=poster.find('li'); 		//包裹图片的li
  		this.postBt=poster.find('.poster-bt');		//左右切换按钮
  		this.firstItem=this.postItem.first();		//第一张图片
- 		this.lastItem=this.postItem.last();			//最后一张图片
- 		this.rotateFlag=true;						//不可连续点击轮播
+ 		this.lastItem=this.postItem.last();		//最后一张图片
+ 		this.rotateFlag=true;				//不可连续点击轮播
  		this.prev=poster.find('.poster-bt-prev');	//左切换按钮
  		this.next=poster.find('.poster-bt-next');	//右切换按钮
  		//默认设置
  		this.setting={
-			 			posterWidth: 	540,		//第一张图片的宽度
-			 			posterHeight: 	200,		//第一张图片的高度
+			 			posterWidth: 	540,			//第一张图片的宽度
+			 			posterHeight: 	200,			//第一张图片的高度
 			 			scale: 			0.95,		//其他图片的缩放比例
 			 			speed: 			500,		//轮播速度
-			 			vertical: 		"bottom",   //对齐方式
+			 			vertical: 		"bottom",   	//对齐方式
 			 			autoPlay: 		true,		//是否自动轮播
 			 			playDelay: 		2000		//轮播间隔时间
  		};
@@ -564,7 +564,7 @@ var poster=function(){
   *推荐歌单
   */
 (function(){
- 	var $listItem=$('.recommend-song').find('.list-item'),//list-item
+ 	var $listItem=$('.recommend-song').find('.list-item'),		  //list-item
  		$week=$('.recommend-song').find('.week'),		  //星期
  		$day=$('.recommend-song').find('.day'),			  //日期
  		timer;
@@ -590,12 +590,12 @@ var poster=function(){
   *渲染歌曲搜索结果
   */
 (function(){
-  	var $searchForm 	= $('.search').find('.search-form'),//搜索表单
+  	var $searchForm 	= $('.search').find('.search-form'),	//搜索表单
   		$searchText 	= $searchForm.find('.search-txt'), 	//搜索框
   		$rightSearch 	= $('.main-right-search'),			
-  		$searchTit_text = $rightSearch.find('.search-text'),//搜索内容
+  		$searchTit_text = $rightSearch.find('.search-text'),	//搜索内容
   		$searchNum 		= $rightSearch.find('.search-songsNum'),//搜索出的歌曲数目
-  		$searchResult 	= $rightSearch.find('.search-result'),//搜索结果
+  		$searchResult 	= $rightSearch.find('.search-result'),	//搜索结果
   		$mainRight 		=$('.right-sup');
 
   	$searchForm.on('submit',function(e){
@@ -814,7 +814,7 @@ var poster=function(){
  		song.src=		$tr.data('src');
  		song.img=		$tr.data('img');
  		song.name=		$tr.find('.song-name').text();
- 		song.singer=	$tr.find('td').eq(2).text();
+ 		song.singer=		$tr.find('td').eq(2).text();
  		song.album=		$tr.find('td').eq(3).text();
 
  		songs.unshift(song);
@@ -896,26 +896,26 @@ var poster=function(){
  */
  var player=function(){
  	var $audio 		= 	$('#audio'),
- 		audio   	= 	$audio[0],							//audio
- 		$songList   = 	$audio.find('source'),				//source列表
- 		$playBt     = 	$('img.play'),						//播放按钮
- 		$prevBt     = 	$('.play-left').find('.prev'),		//上一首
- 		$nextBt     = 	$('.play-left').find('.next'),		//下一首
- 		$progress   = 	$('.play-mid').find('.progress'),	//歌曲总长度条
- 		$buffered   = 	$progress.find('.buffered'),		//缓冲条
- 		$played     = 	$progress.find('.played'),			//已播放长度条
- 		$progressBt = 	$progress.find('.progress-bt'),		//播放进度按钮
- 		$playRight  = 	$('.play-right'),					
- 		$voice      = 	$playRight.find('.voice'),			//声音总长度条
- 		$voicePro   = 	$playRight.find('.voice-pro'),		//声音长度条
- 		$muteBt     = 	$playRight.find('.voice-bt'),		//静音按钮
- 		$voiceBt    = 	$playRight.find('.progress-bt'),	//声音长度按钮
- 		$circuBt    = 	$playRight.find('.circulation'),	//循环模式按钮
- 		bufferedtime,
- 		playedtime,
- 		index=1;
+		audio   	= 	$audio[0],				//audio
+		$songList   	= 	$audio.find('source'),			//source列表
+		$playBt    	= 	$('img.play'),				//播放按钮
+		$prevBt    	= 	$('.play-left').find('.prev'),		//上一首
+		$nextBt    	= 	$('.play-left').find('.next'),		//下一首
+		$progress   	= 	$('.play-mid').find('.progress'),	//歌曲总长度条
+		$buffered  	= 	$progress.find('.buffered'),		//缓冲条
+		$played     	= 	$progress.find('.played'),		//已播放长度条
+		$progressBt	= 	$progress.find('.progress-bt'),		//播放进度按钮
+		$playRight 	= 	$('.play-right'),					
+		$voice      	= 	$playRight.find('.voice'),		//声音总长度条
+		$voicePro  	= 	$playRight.find('.voice-pro'),		//声音长度条
+		$muteBt     	= 	$playRight.find('.voice-bt'),		//静音按钮
+		$voiceBt    	= 	$playRight.find('.progress-bt'),	//声音长度按钮
+		$circuBt    	= 	$playRight.find('.circulation'),	//循环模式按钮
+		bufferedtime,
+		playedtime,
+		index=1;
 
- 		audio.volume=0.5;	//默认声音为0.5
+		audio.volume=0.5;	//默认声音为0.5
 
  	var playerObj={
  		//播放
