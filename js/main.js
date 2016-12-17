@@ -72,46 +72,46 @@
 				for(var i=0;i<songList.length;i++){			
 					listTit+='<dd class="new-song-list dd-item" data-pointer='+i+' data-index='+songList[i].index+'>'+songList[i].title+'</dd>';
 					listHtml+='<div class="right-sup main-right-songList" data-pointer='+i+' data-index='+songList[i].index+'>'+
-								'<div class="songList-top clearfix">'+
-									'<div class="img-left">'+
-										'<img class="girl" src="imgs/song/cd.jpg" alt="背景">'+
+									'<div class="songList-top clearfix">'+
+										'<div class="img-left">'+
+											'<img class="girl" src="imgs/song/cd.jpg" alt="背景">'+
+										'</div>'+
+										'<div class="info-right">'+
+											'<div><span class="info-list">歌单</span><span class="songListName">'+songList[i].title+
+												'</span><img class="edit" src="imgs/song/bianji.png" alt="更改" title="更改信息"></div>'+
+											'<div class="create-info">'+
+												'<span class="username">Mr_fzz</span>'+
+												'<span class="createTime">'+songList[i].time+'创建</span>'+
+											'</div>'+
+											'<div class="edit-info">'+
+												'<span> 标签 ：</span>'+
+												'<span class="edit"> '+(songList[i].label||'添加标签')+'</span>'+
+											'</div>'+
+											'<div class="edit-info">'+
+												'<span> 简介 ：</span>'+
+												'<span class="edit"> '+(songList[i].desc||'添加简介')+'</span>'+
+											'</div>'+
+										'</div>'+
+										'<span class="listNum">0</span>'+
 									'</div>'+
-									'<div class="info-right">'+
-										'<div><span class="info-list">歌单</span><span class="songListName">'+songList[i].title+
-											'</span><img class="edit" src="imgs/song/bianji.png" alt="更改" title="更改信息"></div>'+
-										'<div class="create-info">'+
-											'<span class="username">Mr_fzz</span>'+
-											'<span class="createTime">'+songList[i].time+'创建</span>'+
-										'</div>'+
-										'<div class="edit-info">'+
-											'<span> 标签 ：</span>'+
-											'<span class="edit"> '+(songList[i].label||'添加标签')+'</span>'+
-										'</div>'+
-										'<div class="edit-info">'+
-											'<span> 简介 ：</span>'+
-											'<span class="edit"> '+(songList[i].desc||'添加简介')+'</span>'+
-										'</div>'+
+									'<div class="song-list-nav">'+
+										'<ul class="clearfix">'+
+											'<li><a class="active" data-index="0" href="#">歌曲列表</a></li>'+
+											'<li><a data-index="1" href="#">评论</a></li>'+
+											'<li><a data-index="2" href="#">收藏者</a></li>'+
+										'</ul>'+
 									'</div>'+
-									'<span class="listNum">0</span>'+
-								'</div>'+
-								'<div class="song-list-nav">'+
-									'<ul class="clearfix">'+
-										'<li><a class="active" data-index="0" href="#">歌曲列表</a></li>'+
-										'<li><a data-index="1" href="#">评论</a></li>'+
-										'<li><a data-index="2" href="#">收藏者</a></li>'+
-									'</ul>'+
-								'</div>'+
-								'<div class="songList-tb search-result">'+
-									'<table>'+
-										'<tr class="result-head">'+
-											'<th class="operate">操作</th>'+
-											'<th class="name">音乐标题</th>'+
-											'<th class="singer">歌手</th>'+
-											'<th class="album">专辑</th>'+
-										'</tr>'+
-									'</table>'+
-								'</div>'+
-							'</div>';
+									'<div class="songList-tb search-result">'+
+										'<table>'+
+											'<tr class="result-head">'+
+												'<th class="operate">操作</th>'+
+												'<th class="name">音乐标题</th>'+
+												'<th class="singer">歌手</th>'+
+												'<th class="album">专辑</th>'+
+											'</tr>'+
+										'</table>'+
+									'</div>'+
+								'</div>';
 				}
 			}
 			$newCreateTit.html(listTit);
@@ -423,6 +423,7 @@ var poster=function(){
  		}
  	}
  	Carousel.prototype = {
+		constructor : Carousel,
  		//轮播
  		play:function(){
  			var _this=this;
