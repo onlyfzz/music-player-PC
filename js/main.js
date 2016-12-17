@@ -60,11 +60,11 @@
 		// 渲染新创建的歌单
 		renderList:function(){			
 			var $inputDd=$('.create-input'),
-				$likeList=$('.like-list'),
-				$newCreateTit=$('div.new-create-tit'),
-				$newCreateList=$('div.new-create-list'),
-				listTit='',
-				listHtml='';
+			    $likeList=$('.like-list'),
+			    $newCreateTit=$('div.new-create-tit'),
+			    $newCreateList=$('div.new-create-list'),
+			    listTit='',
+			    listHtml='';
 
 			$newCreateTit.html('');
 			$newCreateList.html('');
@@ -154,10 +154,10 @@
 		 	$rightSup.hide();
 
 		 	var $save=$listDetail.find('.save'),
-		 		$cancel=$listDetail.find('.cancel'),
-		 		$listName=$listDetail.find('.list-name-text'),
-		 		$listDesc=$listDetail.find('.list-desc'),
-		 		$listLabel=$listDetail.find('.list-label-text');
+		 	    $cancel=$listDetail.find('.cancel'),
+		 	    $listName=$listDetail.find('.list-name-text'),
+		 	    $listDesc=$listDetail.find('.list-desc'),
+		 	    $listLabel=$listDetail.find('.list-label-text');
 
 		 	function showItem(){
 		 		var $rightSup=$('.right-sup'),
@@ -199,9 +199,9 @@
 		//渲染Audio和播放列表
 		renderAudio:function(){
 		  	var $audio = $('#audio'),
-		  		$playedList=$('#played-list'),
-		  		$listNum=$playedList.find('.list-num'),
-		  		$listDetail=$playedList.find('table');
+		  	    $playedList=$('#played-list'),
+		  	    $listNum=$playedList.find('.list-num'),
+		  	    $listDetail=$playedList.find('table');
 		  	$audio.find('source:not(.inherent)').remove();
 		  	$listDetail.find('tr:not(.inherent)').remove();
 		  	var audioHtml='',
@@ -227,8 +227,8 @@
 		// 渲染左侧音乐信息
 		renderInfo:function(src,name,singer){
 		  	var $songImg	=	$('#songImg'),
-		  		$songName 	=	$('#songName'),
-		  		$songSinger =	$('#songSinger');
+		  	    $songName 	=	$('#songName'),
+		  	    $songSinger =	$('#songSinger');
 
 		  	$songImg.attr('src', src);
 		  	$songName.text(name);
@@ -292,7 +292,7 @@ function update(index,arr,data){
  */
 function showRemind(msg){
 	var $remindMsg=$('.remind-msg'),
-		$msg=$remindMsg.find('p');
+	    $msg=$remindMsg.find('p');
 
 	$msg.text(msg);
 	$remindMsg.fadeIn(400).fadeOut(2000);	
@@ -301,14 +301,14 @@ function showRemind(msg){
 /*搜索界面tab切换*/
 (function(){
 	var searchNav=$('.search-nav'),
-	 	searchItem=$('.main-right-search').find('.search-item');
+	    searchItem=$('.main-right-search').find('.search-item');
 	tab(searchNav,searchItem);
 })();
 
 /*发现音乐tab切换*/
 (function(){
 	var searchNav=$('.main-right-findMusic').find('.right-nav'),
-	 	searchItem=$('.main-right-findMusic').find('.main-right-item');
+	    searchItem=$('.main-right-findMusic').find('.main-right-item');
 	tab(searchNav,searchItem);
 })();
 
@@ -335,8 +335,8 @@ function showRemind(msg){
 /*登录面板点击出现*/
 (function(){
 	var $rightLogin=$('.right-login'),
-		$loginPanel=$rightLogin.find('.login-panel'),
-		$container=$('.container');
+	    $loginPanel=$rightLogin.find('.login-panel'),
+	    $container=$('.container');
 
 	$rightLogin.click(function(e){
 		e.stopPropagation();
@@ -507,11 +507,11 @@ var poster=function(){
  		//将图片分为左右两部分
  		setOthers:function(){
  			var _this=this,
- 				others=this.postItem.slice(1),
- 				sliceNum=others.size()/2,
- 				rightOthers=others.slice(0,sliceNum),
- 				leftOthers=others.slice(sliceNum),
- 				level=Math.floor(this.postItem.size()/2);
+ 			    others=this.postItem.slice(1),
+ 			    sliceNum=others.size()/2,
+ 			    rightOthers=others.slice(0,sliceNum),
+ 			    leftOthers=others.slice(sliceNum),
+ 			    level=Math.floor(this.postItem.size()/2);
 
  			/*
 			 *firstW 	  第一个幻灯片的宽度
@@ -829,9 +829,9 @@ var poster=function(){
  *从我喜欢的音乐中移除歌曲(点击爱心图标)
  */
  (function(){
- 	$likeList=$('.like-list');
+ 	var $likeList=$('.like-list');
  	$likeList.on('click','.icon-xihuan',function(){
- 		index=$(this).data('index');
+ 		var index=$(this).data('index');
  		songs.splice(index,1);
  		render.renderSong();
  		store.save('songs',songs);
