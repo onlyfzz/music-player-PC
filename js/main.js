@@ -45,14 +45,14 @@
 		  	for(var i=0;i<songs.length;i++){
 		  		i<9? j='0'+(i+1) : j=i;
 		  		trHtml+='<tr data-src='+songs[i].src+' data-img='+songs[i].img+' data-index='+i+'>'+
-							'<td><span class="num">'+j+'</span>'+
-								'<i class="iconfont icon-xihuan"></i>'+
-								'<i class="iconfont icon-xiazai"></i>'+
-							'</td>'+
-							'<td class="song-name">'+songs[i].name+'</td>'+
-							'<td class="song-singer">'+songs[i].singer+'</td>'+
-							'<td>'+songs[i].album+'</td>'+
-						'</tr>';
+						'<td><span class="num">'+j+'</span>'+
+							'<i class="iconfont icon-xihuan"></i>'+
+							'<i class="iconfont icon-xiazai"></i>'+
+						'</td>'+
+						'<td class="song-name">'+songs[i].name+'</td>'+
+						'<td class="song-singer">'+songs[i].singer+'</td>'+
+						'<td>'+songs[i].album+'</td>'+
+					'</tr>';
 		  	}
 		  	$listNum.text(songs.length);
 		  	$likeSong.append(trHtml);
@@ -72,46 +72,46 @@
 				for(var i=0;i<songList.length;i++){			
 					listTit+='<dd class="new-song-list dd-item" data-pointer='+i+' data-index='+songList[i].index+'>'+songList[i].title+'</dd>';
 					listHtml+='<div class="right-sup main-right-songList" data-pointer='+i+' data-index='+songList[i].index+'>'+
-									'<div class="songList-top clearfix">'+
-										'<div class="img-left">'+
-											'<img class="girl" src="imgs/song/cd.jpg" alt="背景">'+
-										'</div>'+
-										'<div class="info-right">'+
-											'<div><span class="info-list">歌单</span><span class="songListName">'+songList[i].title+
-												'</span><img class="edit" src="imgs/song/bianji.png" alt="更改" title="更改信息"></div>'+
-											'<div class="create-info">'+
-												'<span class="username">Mr_fzz</span>'+
-												'<span class="createTime">'+songList[i].time+'创建</span>'+
-											'</div>'+
-											'<div class="edit-info">'+
-												'<span> 标签 ：</span>'+
-												'<span class="edit"> '+(songList[i].label||'添加标签')+'</span>'+
-											'</div>'+
-											'<div class="edit-info">'+
-												'<span> 简介 ：</span>'+
-												'<span class="edit"> '+(songList[i].desc||'添加简介')+'</span>'+
-											'</div>'+
-										'</div>'+
-										'<span class="listNum">0</span>'+
+							'<div class="songList-top clearfix">'+
+								'<div class="img-left">'+
+									'<img class="girl" src="imgs/song/cd.jpg" alt="背景">'+
+								'</div>'+
+								'<div class="info-right">'+
+									'<div><span class="info-list">歌单</span><span class="songListName">'+songList[i].title+
+										'</span><img class="edit" src="imgs/song/bianji.png" alt="更改" title="更改信息"></div>'+
+									'<div class="create-info">'+
+										'<span class="username">Mr_fzz</span>'+
+										'<span class="createTime">'+songList[i].time+'创建</span>'+
 									'</div>'+
-									'<div class="song-list-nav">'+
-										'<ul class="clearfix">'+
-											'<li><a class="active" data-index="0" href="#">歌曲列表</a></li>'+
-											'<li><a data-index="1" href="#">评论</a></li>'+
-											'<li><a data-index="2" href="#">收藏者</a></li>'+
-										'</ul>'+
+									'<div class="edit-info">'+
+										'<span> 标签 ：</span>'+
+										'<span class="edit"> '+(songList[i].label||'添加标签')+'</span>'+
 									'</div>'+
-									'<div class="songList-tb search-result">'+
-										'<table>'+
-											'<tr class="result-head">'+
-												'<th class="operate">操作</th>'+
-												'<th class="name">音乐标题</th>'+
-												'<th class="singer">歌手</th>'+
-												'<th class="album">专辑</th>'+
-											'</tr>'+
-										'</table>'+
+									'<div class="edit-info">'+
+										'<span> 简介 ：</span>'+
+										'<span class="edit"> '+(songList[i].desc||'添加简介')+'</span>'+
 									'</div>'+
-								'</div>';
+								'</div>'+
+								'<span class="listNum">0</span>'+
+							'</div>'+
+							'<div class="song-list-nav">'+
+								'<ul class="clearfix">'+
+									'<li><a class="active" data-index="0" href="#">歌曲列表</a></li>'+
+									'<li><a data-index="1" href="#">评论</a></li>'+
+									'<li><a data-index="2" href="#">收藏者</a></li>'+
+								'</ul>'+
+							'</div>'+
+							'<div class="songList-tb search-result">'+
+								'<table>'+
+									'<tr class="result-head">'+
+										'<th class="operate">操作</th>'+
+										'<th class="name">音乐标题</th>'+
+										'<th class="singer">歌手</th>'+
+										'<th class="album">专辑</th>'+
+									'</tr>'+
+								'</table>'+
+							'</div>'+
+						'</div>';
 				}
 			}
 			$newCreateTit.html(listTit);
@@ -129,25 +129,25 @@
 		 		$DetailContainer=$('.list-detail-container'),
 		 		$rightSup=$('.right-sup'),
 		 	 	$listDetail=$('<div class="new-list-detail">'+
-								'<h2>编辑歌单信息</h2>'+
-								'<div class="detail-cont">'+
-									'<div class="list-name">'+
-										'<label><span>歌单名：</span>'+
-										'<input class="list-name-text" type="text" autofocus value='+(list.title||'')+'></label>'+
-									'</div>'+
-									'<div class="list-label">'+
-										'<label><span>标签：</span>'+
-										'<input class="list-label-text" type="text" value='+(list.label||'')+'></label>'+
-									'</div>'+
-									'<div class="list-info">'+
-										'<label><span>介绍：</span><textarea  class="list-desc" type="text" >'+(list.desc||'')+'</textarea>'+
-									'</div>'+
-									'<div class="bt-group">'+
-										'<button class="save">保存</button>'+
-										'<button class="cancel">取消</button>'+
-									'</div>'+
-								'</div>'+
-							'</div>');
+						'<h2>编辑歌单信息</h2>'+
+						'<div class="detail-cont">'+
+							'<div class="list-name">'+
+								'<label><span>歌单名：</span>'+
+								'<input class="list-name-text" type="text" autofocus value='+(list.title||'')+'></label>'+
+							'</div>'+
+							'<div class="list-label">'+
+								'<label><span>标签：</span>'+
+								'<input class="list-label-text" type="text" value='+(list.label||'')+'></label>'+
+							'</div>'+
+							'<div class="list-info">'+
+								'<label><span>介绍：</span><textarea  class="list-desc" type="text" >'+(list.desc||'')+'</textarea>'+
+							'</div>'+
+							'<div class="bt-group">'+
+								'<button class="save">保存</button>'+
+								'<button class="cancel">取消</button>'+
+							'</div>'+
+						'</div>'+
+					'</div>');
 		 	$DetailContainer.html('');
 		 	$listDetail.appendTo($DetailContainer);
 		 	$DetailContainer.show();
