@@ -1190,7 +1190,6 @@ footer{
 	background: #f5f5f7;
 }
 .played-list h3 .close{
-	display: inline-block;
 	float: right;
 	width: 20px;
 	height: 20px;
@@ -1209,7 +1208,6 @@ footer{
 	padding-left: 30px;
 }
 .played-list .list-tit .clear{
-	display: inline-block;
 	float: right;
 	width: 65px;
 	padding-left: 15px;
@@ -1229,6 +1227,10 @@ footer{
 	background: url(../imgs/song/delete.png) no-repeat center;
 	-webkit-background-size: 15px 15px;
 	background-size: 15px 15px;
+}
+.played-list .list-detail {
+	height: 400px;
+	overflow: auto;
 }
 .played-list .list-detail tr{
 	height: 30px;
