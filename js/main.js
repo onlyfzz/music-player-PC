@@ -831,7 +831,7 @@ var poster=function(){
  (function(){
  	var $likeList=$('.like-list');
  	$likeList.on('click','.icon-xihuan',function(){
- 		var index=$(this).data('index');
+ 		var index=$(this).parents('tr').data('index');
  		songs.splice(index,1);
  		render.renderSong();
  		store.save('songs',songs);
