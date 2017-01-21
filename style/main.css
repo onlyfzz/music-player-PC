@@ -1,4 +1,12 @@
 /*公用样式开始*/
+/*禁止选中文本*/
+html, body{
+    -webkit-user-select: none;  
+    user-select: none;
+}
+body {
+	font-family: "microsoft yahei";
+}
 .container {
 	position: relative;
 	width: 1060px;
@@ -15,9 +23,6 @@
 /*ie*/
 .clearfix {
 	zoom: 1;
-}
-body {
-	font-family: "microsoft yahei";
 }
 .fl {
 	float: left;
