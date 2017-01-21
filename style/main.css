@@ -1,62 +1,62 @@
 /*公用样式开始*/
-.container{
+.container {
 	position: relative;
 	width: 1060px;
 	margin: 5px auto;
 	box-shadow: 0 0 16px #ccc;
 }
 /*清浮动*/
-.clearfix:after{
+.clearfix:after {
 	content: '';
 	height: 0;
 	display: block;
 	clear: both;
 }
 /*ie*/
-.clearfix{
+.clearfix {
 	zoom: 1;
 }
-body{
+body {
 	font-family: "microsoft yahei";
 }
-.fl{
+.fl {
 	float: left;
 }
-.fr{
+.fr {
 	float: right;
 }
-.hide{
+.hide {
 	display: none;
 }
-.show{
+.show {
 	display: block;
 }
-.no-open{
+.no-open {
 	padding-top: 50px;
     text-align: center;
 }
-a{
+a {
 	color: #333;
 }
 /*右侧滚动条*/
-.main .mCSB_inside > .mCSB_container {
+#mCSB_2_container {
     margin-right: 10px;
 }
 /*公用样式结束*/
 
 /*头部开始*/
-header{
+header {
 	height: 50px;
 	line-height: 50px;
 	background: #40bb7a;
 }
-.logo{
+.logo {
 	height: 50px;
 }
-.logo img{
+.logo img {
 	padding: 5px 0 0 20px;
 }
-.search input{
+.search input {
 	width: 220px;
 	height: 24px;
 	margin-left: 120px;
@@ -65,7 +65,7 @@ header{
 	background: #409869;
 	color: #fff;
 }
-.search .search-bt{
+.search .search-bt {
 	width: 24px;
 	height: 24px;
 	vertical-align: middle;
@@ -74,32 +74,32 @@ header{
 	background: url(../imgs/search.png) no-repeat center center;
 	background-size: 12px 12px;
 }
-.head-right{
+.head-right {
 	float: right;
 	margin-right: 100px;
 }
-.head-right li{
+.head-right li {
 	float: left;
 	margin-right: 20px;
 }
-.head-right i{
+.head-right i {
 	font-size: 18px;
 	color: #c6ead6;
 }
-.head-right i:hover{
+.head-right i:hover {
 	color: #fff;
 }
-.right-login{
+.right-login {
 	position: relative;	
 }
-.right-login .username{
+.right-login .username {
 	display: inline-block;
 	padding-left: 30px;
 	background: url(../imgs/touxiang.png) no-repeat left center;
 	background-size: 26px 26px;
 	color: #c6ead6;
 }
-.right-login .triangle{
+.right-login .triangle {
 	display: inline-block;
 	margin-left: 10px;
 	height: 0;
@@ -108,13 +108,13 @@ header{
 	border-bottom: none;
 }
 .right-login:hover .username,
-.right-login:hover .triangle{
+.right-login:hover .triangle {
 	color: #fff;
 	border-top-color: #fff;
 }
 
 /*登录面板开始*/
-.login-panel{
+.login-panel {
 	display: none;
 	position: absolute;
 	z-index: 999;
@@ -128,10 +128,10 @@ header{
 	background: #fafafa;
 	color: #333;
 }
-.login-panel i:hover{
+.login-panel i:hover {
 	color: #aaa;
 }
-.login-panel:before{
+.login-panel:before {
 	content: '';
 	position: absolute;
 	top: -10px;
@@ -142,15 +142,15 @@ header{
 	border-bottom: 10px solid #fafafa;
 	border-top: none;
 }
-.panel-head{
+.panel-head {
 	padding: 15px 5px 15px 15px;
 	border-bottom: 1px solid #eee;
 }
-.panel-head-top{
+.panel-head-top {
 	height: 46px;
 	line-height: 46px;
 }
-.panel-head-top .user{
+.panel-head-top .user {
 	display: inline-block;
 	width: 70%;
 	height:100%;
@@ -161,7 +161,7 @@ header{
 	background-size: 40px 40px;
 	color: #333;
 }
-.panel-head-top .checkIn{
+.panel-head-top .checkIn {
 	box-sizing: border-box;
 	padding: 5px 10px 5px 25px;
 	border: 1px solid #eee;
@@ -170,12 +170,12 @@ header{
 	-webkit-background-size: 16px 16px;
 	background-size: 16px 16px;
 }
-.panel-head-bottom{
+.panel-head-bottom {
 	height: 35px;
 	padding: 10px 0;
 	line-height: 1.2;
 }
-.panel-head-bottom a{
+.panel-head-bottom a {
 	display: block;
 	float: left;
 	box-sizing: border-box;
@@ -184,46 +184,46 @@ header{
 	border-right: 1px solid #eee;
 	color: #333;
 }
-.panel-head-bottom strong{
+.panel-head-bottom strong {
 	display: block;
 }
-.panel-head-bottom a:last-child{
+.panel-head-bottom a:last-child {
 	border-right: 0;
 }
-.body-item{
+.body-item {
 	border-bottom: 1px solid #eee;
 }
-.body-item li{
+.body-item li {
 	float: none;
 	margin-right: 0;
 }
-.body-item a{
+.body-item a {
 	display: block;
 	height: 30px;
 	line-height: 30px;
 	padding: 5px 5px 5px 15px;
 	color: #333;
 }
-.body-item a:hover{
+.body-item a:hover {
 	background: #eee;
 }
-.body-item b{
+.body-item b {
 	color: #ddd;
 }
-.body-item i{
+.body-item i {
 	margin-right: 5px;
 	font-size: 16px;
 	color: #aaa;
 }
-.body-item em{
+.body-item em {
 	font-size: 16px;
 	font-family: "sim-sun";
 	font-weight: 600;
 }
-.body-item .item-right{
+.body-item .item-right {
 	color: #ccc;
 }
-.weixin .item-right{
+.weixin .item-right {
 	padding-left: 20px;
 	background: url(../imgs/weixin.png) no-repeat left center;
 	-webkit-background-size: 16px 16px;
@@ -234,17 +234,17 @@ header{
 
 /*.main开始*/
 /*main-left开始*/
-.main-left-wrap{
+.main-left-wrap {
 	float: left;
 	width: 200px;
 }
-.main-left{
+.main-left {
 	width: 200px;
 	height: 500px;
 	overflow: auto;
 	background: #f5f5f7;
 }
-.main-right{
+.main-right {
 	position: relative;
 	width: 860px;
 	height: 560px;
@@ -253,15 +253,15 @@ header{
 	background: #fafafa;
 }
 .left-item dt,
-.left-item dd{
+.left-item dd {
 	height: 34px;
 	line-height: 34px;
 	color: #333;
 }
-.left-item dt{
+.left-item dt {
 	padding-left: 10px;
 }
-.left-item dd{
+.left-item dd {
 	padding-left: 50px;
 	border-left: 3px solid #f5f5f7;
 	white-space: nowrap;
@@ -269,39 +269,39 @@ header{
 	cursor: pointer;
 	overflow: hidden;
 }
-.left-item dd.active{
+.left-item dd.active {
 	border-left: 3px solid #3bba7d;
 	background-color: #e8e9ec;
 }
-.main-left .left-create-list{
+.main-left .left-create-list {
 	position: relative;
 }
-.main-left .left-create-list img{
+.main-left .left-create-list img {
 	position: absolute;
 	width: 14px;
 	height: 14px;
 	cursor: pointer;
 }
-.left-create-list .add{
+.left-create-list .add {
 	left: 152px;
 	top: 10px; 
 }
-.left-create-list .create-input{
+.left-create-list .create-input {
 	display: none;
 }
-.left-create-list input{
+.left-create-list input {
 	width: 85%;
     height: 20px;
     border: 1px solid #eee;
     text-indent: 5px;
 }
-.main-left .left-create-list .down{
+.main-left .left-create-list .down {
 	left: 175px;
 	top: 11px;
 	width: 12px;
 	height: 12px;
 }
-.tit-menu{
+.tit-menu {
 	display: none;
 	position: absolute;
 	z-index: 50;
@@ -314,125 +314,125 @@ header{
 	background: #fff;
 	box-shadow: 0 0 4px #ccc;
 }
-.tit-menu li{
+.tit-menu li {
 	padding: 10px 0 10px 36px;
 }
-.tit-menu li:hover{
+.tit-menu li:hover {
 	background-color: #ededef;
 }
 #like-menu .play,
-#like-menu .next{
+#like-menu .next {
 	color: #333;
 }
-.tit-menu .play{
+.tit-menu .play {
 	background: url(../imgs/song/bofang.png) no-repeat 6px center;
 	-webkit-background-size: 20px 20px;
 	background-size: 20px 20px;
 	color: #ddd;
 }
-.tit-menu .next{
+.tit-menu .next {
 	background: url(../imgs/song/bofang.png) no-repeat 6px center;
 	-webkit-background-size: 20px 20px;
 	background-size: 20px 20px;
 	color: #ddd;
 }
-.tit-menu .share{
+.tit-menu .share {
 	background: url(../imgs/song/fenxiang.png) no-repeat 6px center;
 	-webkit-background-size: 20px 20px;
 	background-size: 20px 20px;
 	color: #ddd;
 }
-.tit-menu .copy{
+.tit-menu .copy {
 	background: url(../imgs/song/fuz.png) no-repeat 6px center;
 	-webkit-background-size: 20px 20px;
 	background-size: 20px 20px;
 	color: #ddd;
 }
-.tit-menu .loadAll{
+.tit-menu .loadAll {
 	background: url(../imgs/song/load.png) no-repeat 6px center;
 	-webkit-background-size: 20px 20px;
 	background-size: 20px 20px;
 	color: #ddd;
 }
-.tit-menu .edit{
+.tit-menu .edit {
 	background: url(../imgs/song/bianji.png) no-repeat 6px center;
 	-webkit-background-size: 20px 20px;
 	background-size: 20px 20px;
 }
-.tit-menu .delete{
+.tit-menu .delete {
 	background: url(../imgs/song/delete.png) no-repeat 6px center;
 	-webkit-background-size: 20px 20px;
 	background-size: 20px 20px;
 }
-.left-item .find{
+.left-item .find {
 	background: url(../imgs/find.png) no-repeat 20px center;
 	-webkit-background-size: 16px 16px;
 	background-size: 16px 16px;
 }
-.left-item .fm{
+.left-item .fm {
 	background: url(../imgs/fm.png) no-repeat 20px center;
 	-webkit-background-size: 16px 16px;
 	background-size: 16px 16px;
 }
-.left-item .mv{
+.left-item .mv {
 	background: url(../imgs/mv.png) no-repeat 20px center;
 	-webkit-background-size: 16px 16px;
 	background-size: 16px 16px;
 }
-.left-item .friends{
+.left-item .friends {
 	background: url(../imgs/friends.png) no-repeat 20px center;
 	-webkit-background-size: 16px 16px;
 	background-size: 16px 16px;
 }
-.left-item .localMusic{
+.left-item .localMusic {
 	background: url(../imgs/localmusic.png) no-repeat 20px center;
 	-webkit-background-size: 16px 16px;
 	background-size: 16px 16px;
 }
-.left-item .download{
+.left-item .download {
 	background: url(../imgs/download.png) no-repeat 17px center;
 	-webkit-background-size: 16px 16px;
 	background-size: 16px 16px;
 }
-.left-item .cloudDisk{
+.left-item .cloudDisk {
 	background: url(../imgs/yunpan.png) no-repeat 20px center;
 	-webkit-background-size: 16px 16px;
 	background-size: 16px 16px;
 }
-.left-item .mySinger{
+.left-item .mySinger {
 	background: url(../imgs/singer.png) no-repeat 20px center;
 	-webkit-background-size: 16px 16px;
 	background-size: 16px 16px;
 }
-.left-item .fm{
+.left-item .fm {
 	background: url(../imgs/fm.png) no-repeat 20px center;
 	-webkit-background-size: 16px 16px;
 	background-size: 16px 16px;
 }
-.left-item .likeMusic{
+.left-item .likeMusic {
 	background: url(../imgs/like.png) no-repeat 20px center;
 	-webkit-background-size: 16px 16px;
 	background-size: 16px 16px;
 }
 .left-item .new-song-list,
-.left-item .songs{
+.left-item .songs {
 	background: url(../imgs/music.png) no-repeat 20px center;
 	-webkit-background-size: 16px 16px;
 	background-size: 16px 16px;
 }
 /*左侧播放信息开始*/
-.song-play{
+.song-play {
 	width: 100%;
 	height: 60px;
 	border-top: 1px solid #ddd;
 	background: #f5f5f7;
 }
-.song-play img{
+.song-play img {
 	float: left;
 	width: 60px;
 	height: 60px;
 }
-.song-play p{
+.song-play p {
 	padding-top: 10px;
 	margin-left: 70px;
 	line-height: 1.6;
@@ -442,7 +442,7 @@ header{
     cursor: pointer;
     overflow: hidden;
 }
-.song-play .song-name{
+.song-play .song-name {
 	font-size: 14px;
 }
 /*左侧播放信息结束*/
@@ -450,45 +450,45 @@ header{
 
 /*main-right开始*/
 /*发现音乐导航开始*/
-.main-right-findMusic{
+.main-right-findMusic {
 	padding: 0 20px;
 }
-.main-right .right-nav{
+.main-right .right-nav {
 	border-bottom: 1px solid #eee;
 	text-align: center;
 }
-.main-right .right-nav ul{
+.main-right .right-nav ul {
 	display: inline-block;
 	margin-bottom: -4px;
 }
-.main-right .right-nav li{
+.main-right .right-nav li {
 	float: left;
 	margin-right: 45px;
 }
-.main-right .right-nav li:last-child{
+.main-right .right-nav li:last-child {
 	margin-right: 0;
 }
-.main-right .right-nav a{
+.main-right .right-nav a {
 	display: block;
 	padding: 10px 0;
 	font-size: 14px;
 	color: #584646;
 }
-.main-right .right-nav a.active{
+.main-right .right-nav a.active {
 	border-bottom: 1px solid #3bba7d;
 	color: #3bba7d;
 }
 /*发现音乐导航结束*/
 
 /*广告轮播开始*/
-.main-right .poster{
+.main-right .poster {
 	position: relative;
 	width: 810px;
 	height: 200px;
 	margin: 0 auto;
 	padding: 20px 0;
 }
-.main-right .poster-bt{
+.main-right .poster-bt {
 	display: none;
 	position: absolute;
 	z-index: 20;
@@ -497,36 +497,36 @@ header{
 	height: 200px;
 	cursor: pointer;
 }
-.poster-bt-prev{
+.poster-bt-prev {
 	left: 0;
 	background: url(../imgs/btn_l.png) no-repeat 10px center;
 	-webkit-background-size: 30px 30px;
 	background-size: 30px 30px;
 }
-.poster-bt-next{
+.poster-bt-next {
 	right: 0;
 	background: url(../imgs/btn_r.png) no-repeat 95px center;
 	-webkit-background-size: 30px 30px;
 	background-size: 30px 30px;
 }
-.main-right .poster-list{
+.main-right .poster-list {
 	position: absolute;
 	top: 20px;
 	left: 135px;
 	width: 540px;
 	height: 200px;
 }
-.main-right .poster-list li{
+.main-right .poster-list li {
 	position: absolute;
 	left: 0;
 	top: 0;
 	width: 100%;
 	height: 100%;
 }
-.main-right .poster-list li:first-child{
+.main-right .poster-list li:first-child {
 	z-index: 10;
 }
-.main-right .poster-list img{
+.main-right .poster-list img {
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -534,32 +534,32 @@ header{
 /*广告轮播结束*/
 
 /*推荐歌单开始*/
-.recommend-item .item-tit{
+.recommend-item .item-tit {
 	height: 40px;
 	line-height: 40px;
 	border-bottom: 1px solid #eee;
 }
-.recommend-item .item-tit h3{
+.recommend-item .item-tit h3 {
 	float: left;
 	font-size: 16px;
 	letter-spacing: 2px;
 }
-.recommend-item .item-tit span{
+.recommend-item .item-tit span {
 	float: right;
 }
-.recommend-item .item-cont{
+.recommend-item .item-cont {
 	margin-top: 10px;
 	color: #333;
 }
-.recommend-item .song-list li{
-	width: 150px;
-	margin-right: 15px;
+.recommend-item .song-list li {
 	float: left;
+	width: 150px;
+	margin-right: 15px;	
 }
-.recommend-item .song-list li:nth-child(5n){
+.recommend-item .song-list li:nth-child(5n) {
 	margin-right: 0;
 }
-.recommend-item .song-list .list-item{
+.recommend-item .song-list .list-item {
 	position: relative;
 	box-sizing: border-box;
 	width: 150px;
@@ -568,11 +568,11 @@ header{
 	border: 1px solid #eee;
 	background: #fff;
 }
-.recommend-item .song-list .list-item-tit{
+.recommend-item .song-list .list-item-tit {
 	height: 70px;
 	padding-top: 4px;
 }
-.recommend-item .song-list .list-item-top{
+.recommend-item .song-list .list-item-top {
 	display: none;
 	position: absolute;
 	left: 0;
@@ -582,20 +582,20 @@ header{
 	color: #fff;
 }
 .recommend-item .list-item .week,
-.recommend-item .list-item .day{
+.recommend-item .list-item .day {
 	display: block;
 	padding-top: 20px;
 }
-.recommend-item .list-item .week{
+.recommend-item .list-item .week {
 	font-size: 14px;
 }
-.recommend-item .list-item .day{
+.recommend-item .list-item .day {
 	padding-top: 10px;
 	font-size: 80px;
 	line-height: 1;
 	color: #3bba7d;
 }
-.recommend-item .song-list .list-item-ic{
+.recommend-item .song-list .list-item-ic {
 	display: inline-block;
 	position: absolute;
 	right: 4px;
@@ -610,125 +610,125 @@ header{
 	background-size: 14px 14px;
 	color: #fff;
 }
-.recommend-item .list-item img{
+.recommend-item .list-item img {
 	display: block;
 	width: 100%;
 	height: 100%;
 }
 .exclusive-song .song-list li,
-.recommend-mv .song-list li{
+.recommend-mv .song-list li {
 	width: 260px;
 }
 .exclusive-song .song-list .list-item,
-.recommend-mv .song-list .list-item{
+.recommend-mv .song-list .list-item {
 	width: 260px;
 	height: 140px;	
 }
 .exclusive-song .list-item img,
-.recommend-mv .list-item img{
+.recommend-mv .list-item img {
 	display: block;
 	width: 100%;
 	height: 100%;
 }
 .exclusive-song .song-list li:nth-child(3n),
-.recommend-mv .song-list li:nth-child(3n){
+.recommend-mv .song-list li:nth-child(3n) {
 	margin-right:0;
 }
 /*最新音乐开始*/
-.new-song .item-cont{
+.new-song .item-cont {
 	height: 300px;
 	border: 1px solid #eee;
 	margin-bottom: 45px;
 }
-.new-song .song-list{
+.new-song .song-list {
 	float: left;
 	box-sizing: border-box;
 	width: 50%;
 }
-.new-song .song-list:first-child{
+.new-song .song-list:first-child {
 	border-right: 1px solid #eee;
 }
-.new-song .song-list li{
+.new-song .song-list li {
 	width: 100%;
 	height: 60px;
 	line-height: 60px;
 }
-.new-song .song-list li:nth-of-type(even){
+.new-song .song-list li:nth-of-type(even) {
 	background: #f5f5f7;
 }
-.new-song .song-list li:hover{
+.new-song .song-list li:hover {
 	background: #ecedee;
 }
 .new-song .song-list h4,
-.new-song .song-detail .name{
+.new-song .song-detail .name {
 	color: #777;
 }
-.new-song .song-list h4{
+.new-song .song-list h4 {
 	float: left;
 	width: 40px;
 	text-align: center;
 }
-.new-song .song-list img{
+.new-song .song-list img {
 	float: left;
 	width: 40px;
 	height: 40px;
 }
-.new-song .song-list .song-detail{
+.new-song .song-list .song-detail {
 	padding-top: 10px;
 	float: left;
 }
-.new-song .song-detail p{
+.new-song .song-detail p {
 	float: left;
 	padding-left: 10px;
 }
-.new-song .song-detail span{
+.new-song .song-detail span {
 	display: block;
 	line-height: 1.6
 }
 .new-song .song-detail .sq,
-.new-song .song-detail .mv{
+.new-song .song-detail .mv {
 	display: inline-block;
 	width: 15px;
 	height: 15px;
 	padding-right: 10px;
 	vertical-align: middle;
 }
-.new-song .song-detail .sq{
+.new-song .song-detail .sq {
 	background: url(../imgs/song/sq.png) no-repeat left center;
 	-webkit-background-size: 15px 15px;
 	background-size: 15px 15px;
 }
-.new-song .song-detail .mv{
+.new-song .song-detail .mv {
 	background: url(../imgs/song/mv.png) no-repeat left center;
 	-webkit-background-size: 15px 15px;
 	background-size: 15px 15px;
 }
 /*最新音乐结束*/
 /*主播电台开始*/
-.host-radio .song-list{
+.host-radio .song-list {
 	float: left;
 	width: 50%;
 }
-.host-radio .song-list li{
+.host-radio .song-list li {
 	float: none;
 	width: 100%;
 	padding: 10px 0;
 	border-bottom: 1px solid #eee;
 }
-.host-radio .song-list li:first-child{
+.host-radio .song-list li:first-child {
 	padding-top: 0;
 }
-.host-radio .song-list img{
+.host-radio .song-list img {
 	float: left;
 	width: 80px;
 	height: 80px;
 }
-.host-radio .song-list p{
+.host-radio .song-list p {
     height: 80px;
     float: left;
     margin-left: 10px;
 }
-.host-radio .song-list span{
+.host-radio .song-list span {
 	display: block;
 	padding-top: 15px;
 }
@@ -736,22 +736,22 @@ header{
 /*推荐歌单结束*/
 
 /*搜索结果开始*/
-.main-right-search{
+.main-right-search {
 	position: relative;
 }
-.main-right-search .search-tit{
+.main-right-search .search-tit {
 	padding: 25px 0 25px 30px;
 }
-.main-right-search .search-text{
+.main-right-search .search-text {
 	color: #0c73c2;
 }
 .main-right-songList .song-list-nav,
-.main-right-search .search-nav{
+.main-right-search .search-nav {
 	padding-left: 30px;
 	border-bottom: 1px solid #3bba7d;
 }
 .main-right-songList .song-list-nav li,
-.main-right-search .search-nav li{
+.main-right-search .search-nav li {
 	float: left;
 	width: 10%;
 	height: 30px;
@@ -762,82 +762,82 @@ header{
 	text-align: center;
 }
 .main-right-songList a,
-.main-right-search .search-nav a{
+.main-right-search .search-nav a {
 	display: block;
 	background: #fff;
 }
 .main-right-songList a.active,
-.main-right-search .search-nav a.active{
+.main-right-search .search-nav a.active {
 	background: #3bba7d;
 	color: #fff;
 }
-.search-result table{
+.search-result table {
 	width: 100%;
 }
-.search-result .result-head{
+.search-result .result-head {
 	border-bottom: 1px solid #eee;
 }
-.search-result tr{
+.search-result tr {
 	height: 30px;
 	line-height: 30px;
 }
-.search-result th{
+.search-result th {
 	box-sizing: border-box;
 	border-left: 1px solid #eee;
 	border-right: 1px solid #eee;
 }
 .search-result .operate,
-.search-result tr td:first-child{
+.search-result tr td:first-child {
 	width: 10%;
 	padding-left: 30px;
 	border-left: 0;
 }
 .search-result .name,
-.search-result tr td:nth-child(2){
+.search-result tr td:nth-child(2) {
 	width: 25%;
 	padding-left: 10px;
 }
 .search-result .singer,
-.search-result tr td:nth-child(3){
+.search-result tr td:nth-child(3) {
 	width: 15%;
 	padding-left: 10px;
 }
 .search-result .album,
-.search-result tr td:nth-child(4){
+.search-result tr td:nth-child(4) {
 	width: 25%;
 	padding-left: 10px;
 }
-.search-result tr:nth-child(odd){
+.search-result tr:nth-child(odd) {
 	background: #f5f5f7;
 }
-.search-result tr:hover{
+.search-result tr:hover {
 	background: #ecedee;
 }
-.search-result table .result-head{
+.search-result table .result-head {
 	background: #fafafa;
 }
-.search-result .operate{
+.search-result .operate {
 	text-align: center;
 }
-.search-result .num{
+.search-result .num {
 	margin-right: 15px;
 	font-size: 12px;
 	color: #ccc;
 }
-.search-result .iconfont{
+.search-result .iconfont {
 	margin-right: 6px;
 	font-size: 14px;
 	cursor: pointer;
 	color: #ccc;
 }
-.search-result .icon-xiazai{
+.search-result .icon-xiazai {
 	position: relative;
 	top: -1px;
 }
-.search-result .iconfont:hover{
+.search-result .iconfont:hover {
 	color: #333;
 }
-.search-result .song-name{
+.search-result .song-name {
 	color: #0c73c2; 
 }
 .search-singer,
@@ -846,7 +846,7 @@ header{
 .search-songList,
 .search-geci,
 .search-radio,
-.search-user{
+.search-user {
 	display: none;
 	padding-top: 50px;
 	text-align: center;
@@ -854,22 +854,22 @@ header{
 /*搜素结果结束*/
 
 /*右侧歌单开始*/
-.new-create-list .right-sup{
+.new-create-list .right-sup {
 	display: none;
 }
 /*歌单头部开始*/
-.songList-top{
+.songList-top {
 	position: relative;
 	padding: 20px 0 60px 30px;
 }
-.songList-top .img-left{
+.songList-top .img-left {
 	position: relative;
 	float: left;
 	width: 200px;
 	height: 200px;
 	overflow: hidden;
 }
-.songList-top .img-left:after{
+.songList-top .img-left:after {
 	content: '';
 	position: absolute;
 	z-index: 2;
@@ -879,11 +879,11 @@ header{
 	bottom: 0;
 	background: rgba(0,0,0,.5);
 }
-.songList-top .girl{
+.songList-top .girl {
 	width: 200px;
 	height: 200px;
 }
-.songList-top .heart{
+.songList-top .heart {
 	position: absolute;
 	z-index: 3;
 	left: 50px;
@@ -891,11 +891,11 @@ header{
 	width: 100px;
 	height: 100px;
 }
-.songList-top .info-right{
+.songList-top .info-right {
 	float: left;
 	margin-left: 30px;
 }
-.info-right .info-list{
+.info-right .info-list {
 	padding: 2px 10px;
 	border-radius: 2px;
 	font-size: 10px;
@@ -903,27 +903,27 @@ header{
 	background: #3bba7d;
 	color: #fff;
 }
-.info-right img.edit{	
+.info-right img.edit {	
     width: 20px;
     height: 20px;
     margin-left: 5px;
     vertical-align: middle;
     cursor: pointer;
 }
-.info-right .edit-info{
+.info-right .edit-info {
     margin: 30px 0 10px 6px;
 }
-.info-right span.edit{
+.info-right span.edit {
 	cursor: pointer;
 	color: #0a63a8;
 }
-.info-right .songListName{
+.info-right .songListName {
 	margin-left: 10px;
 	vertical-align: middle;
 	font-size: 20px;
 	font-family: "宋体";
 }
-.info-right .create-info{
+.info-right .create-info {
 	height: 40px;
 	line-height: 40px;
 	margin-top: 20px;
@@ -932,16 +932,16 @@ header{
 	-webkit-background-size: 40px 40px;
 	background-size: 40px 40px;
 }
-.create-info .username{
+.create-info .username {
 	margin: 0 20px 0 10px;
 }
-.create-info .createTime{
+.create-info .createTime {
 	color: #aaa;
 }
-.songList-tb .icon-xihuan{
+.songList-tb .icon-xihuan {
 	color: #f50;
 }
-.songList-top .listNum{
+.songList-top .listNum {
 	position: absolute;
 	top: 25px;
 	right: 40px;
@@ -954,7 +954,7 @@ header{
 /*歌单头部结束*/
 
 /*提示消息开始*/
-.remind-msg{
+.remind-msg {
 	position: absolute;
 	z-index: 3;
 	left: 425px;
@@ -967,34 +967,34 @@ header{
 	text-align: center;
 	background: rgba(0,0,0,.6);
 }
-.remind-msg p{
+.remind-msg p {
 	font-size: 22px;
 	color: #fff;
 }
 /*提示消息结束*/
 
 /*编辑歌单信息开始*/
-.list-detail-container{
+.list-detail-container {
 	padding: 10px 30px;
 }
-.new-list-detail h2{
+.new-list-detail h2 {
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
     font-size: 18px;
     font-weight: 300;
 }
-.new-list-detail .detail-cont{
+.new-list-detail .detail-cont {
     padding-top: 40px;
 
 }
-.new-list-detail .list-label{
+.new-list-detail .list-label {
 	margin-top: 30px;
 }
 .new-list-detail .list-name,
-.new-list-detail .list-label{
+.new-list-detail .list-label {
 	height: 30px;
 }
-.new-list-detail span{
+.new-list-detail span {
     display: inline-block;
     width: 50px;
     margin-right: 10px;
@@ -1002,25 +1002,25 @@ header{
     color: #777;
 }
 .new-list-detail .list-name-text,
-.new-list-detail .list-label-text{	
+.new-list-detail .list-label-text {	
 	width: 418px;
     height: 28px;
     border: 1px solid #eee; 
 }
-.new-list-detail .list-info{
+.new-list-detail .list-info {
 	padding-top: 30px;
 }
-.new-list-detail textarea{
+.new-list-detail textarea {
 	width: 418px;
 	height: 70px;
 	border: 1px solid #eee; 
 	resize: none;
 	vertical-align: middle;
 }
-.new-list-detail .bt-group{
+.new-list-detail .bt-group {
 	margin: 100px 0 0 60px;
 }
-.new-list-detail button{
+.new-list-detail button {
 	width: 80px;
 	height: 30px;
 	border: 1px solid #eee;
@@ -1028,11 +1028,11 @@ header{
 	margin-right: 15px;
 	cursor: pointer;
 }
-.new-list-detail .save{
+.new-list-detail .save {
 	background: #0c73c2;
 	color: #fff;
 }
-.new-list-detail .cancel{
+.new-list-detail .cancel {
 	background: #fff;
 	color: #333;
 }
@@ -1041,50 +1041,50 @@ header{
 /*main-right结束*/
 
 /*尾部开始*/
-footer{	
+footer {	
 	height: 48px;
 	border-top: 1px solid #ddd;
 	background: #f6f6f8;
 	box-shadow: 0 0 4px #ccc;
 }
-.play-left{
+.play-left {
 	float: left;
 	width: 200px;
 	height: 48px;
 	line-height: 48px;
 }
-.audio-play{
+.audio-play {
 	position: relative;
 }
-.audio-play img{
+.audio-play img {
 	cursor: pointer;
 }
 .play-left .prev,
-.play-left .next{
+.play-left .next {
 	width: 30px;
 	height: 30px;
 	vertical-align: middle;
 }
-.play-left .prev{
+.play-left .prev {
 	margin-left: 30px;
 }
-.play-left .play{
+.play-left .play {
 	width: 35px;
 	height: 35px;
 	margin: 0 20px;
 	vertical-align: middle;
 }
-.play-mid{
+.play-mid {
 	float: left;
 	width: 600px;
 	height: 48px;
 	line-height: 48px;
 	padding: 0 20px;
 }
-.play-mid span{
+.play-mid span {
 	color: #666;
 }
-.play-mid .progress{
+.play-mid .progress {
 	display: inline-block;
 	position: relative;
 	width: 470px;
@@ -1095,7 +1095,7 @@ footer{
 	background: #e8e8e9;
 }
 .play-mid .buffered,
-.play-mid .played{
+.play-mid .played {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -1103,16 +1103,16 @@ footer{
 	height: 4px;
 	border-radius: 2px;
 }
-.play-mid .buffered{
+.play-mid .buffered {
 	z-index: 1;
 	background: #c6c6c6;
 }
-.play-mid .played{
+.play-mid .played {
 	width: 0;
 	z-index: 2;
 	background: #5dc78a;
 }
-.progress-bt{
+.progress-bt {
 	position: absolute;
 	z-index: 5;
 	left: 0;
@@ -1125,17 +1125,17 @@ footer{
 	-webkit-background-size: 14px 14px;
 	background-size: 14px 14px;
 }
-.play-right{
+.play-right {
 	float: left;
 	height: 48px;
 	line-height: 48px;
 }
-.play-right .voice-bt{
+.play-right .voice-bt {
 	width: 14px;
 	height: 14px;
 	vertical-align: middle;
 }
-.play-right .voice{
+.play-right .voice {
 	display: inline-block;
 	position: relative;
 	width: 100px;
@@ -1144,7 +1144,7 @@ footer{
 	border-radius: 2px;
 	background: #e8e8e9;
 }
-.play-right .voice-pro{
+.play-right .voice-pro {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -1154,23 +1154,23 @@ footer{
 	background: #5dc78a;
 }
 .play-right .circulation,
-.play-right .playedList-Bt{
+.play-right .playedList-Bt {
 	width: 20px;
 	height: 20px;
 	padding-left: 10px;
 	vertical-align: middle;
 }
-.play-right .progress-bt{
+.play-right .progress-bt {
 	display: none;
 	left: 50px;
 	-webkit-background-size: 12px 12px;
 	background-size: 12px 12px;
 }
-.play-right .voice:hover .progress-bt{
+.play-right .voice:hover .progress-bt {
 	display: block;
 }
 /*播放列表开始*/
-.played-list{
+.played-list {
 	position: absolute;
 	z-index: 30;
 	right: 0;
@@ -1183,13 +1183,13 @@ footer{
 	background: #fafafa;
 	overflow: auto;
 }
-.played-list h3{
+.played-list h3 {
 	height: 40px;
 	line-height: 40px;
 	text-align: center;
 	background: #f5f5f7;
 }
-.played-list h3 .close{
+.played-list h3 .close {
 	float: right;
 	width: 20px;
 	height: 20px;
@@ -1200,25 +1200,25 @@ footer{
 	-webkit-background-size: 20px 20px;
 	background-size: 20px 20px;
 }
-.played-list .list-tit{
+.played-list .list-tit {
 	height: 28px;
 	line-height: 28px;
 	border-top: 1px solid #eee;
 	border-bottom: 1px solid #eee;
 	padding-left: 30px;
 }
-.played-list .list-tit .clear{
+.played-list .list-tit .clear {
 	float: right;
 	width: 65px;
 	padding-left: 15px;
 	cursor: pointer;
 }
-.played-list .clear span{
+.played-list .clear span {
 	display: inline-block;
 	margin-top: -2px;
 	vertical-align: middle;
 }
-.played-list .list-tit i{
+.played-list .list-tit i {
 	display: inline-block;
 	width: 15px;
 	height: 15px;
@@ -1228,25 +1228,25 @@ footer{
 	-webkit-background-size: 15px 15px;
 	background-size: 15px 15px;
 }
-.played-list .list-detail {
+.played-list .list-detail  {
 	height: 400px;
 	overflow: auto;
 }
-.played-list .list-detail tr{
+.played-list .list-detail tr {
 	height: 30px;
 	cursor: pointer;
 }
-.played-list .list-detail tr:nth-child(even){
+.played-list .list-detail tr:nth-child(even) {
 	background: #f5f5f7;
 }
-.played-list .list-detail tr:hover{
+.played-list .list-detail tr:hover {
 	background: #ecedee;
 }
-.played-list .list-detail .song-name{
+.played-list .list-detail .song-name {
 	padding-left: 30px;
 	width: 350px;
 }
-.played-list .list-detail .song-singer{
+.played-list .list-detail .song-singer {
 	width: 200px;
 }
 /*播放列表结束*/
