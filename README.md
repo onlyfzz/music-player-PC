@@ -1,6 +1,6 @@
 # music-player-PC
 ##pc版仿制网易云音乐(900行html+1200行css+1100行js)
-<a href="http://onlyfzz.p.imooc.io">##网易云音乐pc版（点击进入）</a><br>
+##<a href="http://onlyfzz.p.imooc.io">网易云音乐pc版（点击进入）</a><br>
 这是我第一次写这么多的js,写完感觉还是有一点成就感的...<br>
 ###主要实现的功能如下:
 <ol>
