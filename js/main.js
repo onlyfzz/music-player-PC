@@ -368,7 +368,7 @@ function showRemind(msg) {
 /**
  *广告轮播图
  */
-var poster = function() {
+(function($) {
     /**
      *@param{jQ-Object} poster  传入轮播的对象
      *@param{Object} setting 传入想要的配置
@@ -421,6 +421,7 @@ var poster = function() {
                 self.play();
             });
         }
+        this.setOthers();
     }
     Carousel.prototype = {
         constructor : Carousel,
@@ -556,10 +557,15 @@ var poster = function() {
             });
         }
     };  
-    var carousol = new Carousel($('.poster'));
-    carousol.setOthers();
-    return carousol;
-}();
+    $.fn.extend({
+        carousel: function(setting) {
+            return this.each(function() {
+                new Carousel(this, setting);
+            });
+        }
+    });
+})(jQuery);
+$('.poster').carousel();
 
  /**
   *推荐歌单
