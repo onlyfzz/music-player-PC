@@ -47,6 +47,9 @@ a {
 #mCSB_2_container {
     margin-right: 10px;
 }
+.mCSB_inside > .mCSB_container {
+    margin-right: 10px !important;
+}
 /*公用样式结束*/
 
 /*头部开始*/
